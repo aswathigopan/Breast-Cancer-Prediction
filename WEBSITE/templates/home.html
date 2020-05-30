@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Breast Cancer Prediction</title>
+    <link rel="stylesheet" href="/static/css/homestyle.css">
+</head>
+<body background="/static/images/b3.jpg" id="back">
+    <header>
+        <div class="container">
+            <img src="/static/images/breast-cancer.jpg" alt="symbol" height="80" width="80">
+             <div class="headtag">
+                 <a href="{{url_for('home')}}">Home</a>
+                 <a href="{{url_for('predict')}}">Predict Tool</a>
+                 <a href="{{url_for('about')}}">About Us</a>
+            </div>
+        </div>
+    </header>
+    <!-- Aside -->
+    <div>
+        <div class="cancer">
+            <p> Being the most frequently occurring cancer in women,
+                breast cancer affects around 10% of women at some point in
+                their life. It is the second leading contributor to women’s
+                death after lung cancer. 25% of all cancers in women
+                including 12% of all new cases are caused by breast cancer. Topics
+                like medial science rise rapidly when certain approaches like
+                data mining is applied due to better possibility of prediction
+                of diseases, reducing medicine costs, improving health of
+                patient by revamping the quality of healthcare along with
+                value by saving people’s lives through real time decisions.The accessibility of healthcare datasets and data analysis
+                promote the researchers to apply study in extracting unknown pattern from healthcare datasets.  </p> 
+            <h5 id="head" style="color: blueviolet;font-size: x-large;font-style: oblique;">How Predict Tool Works???</h5>
+            <p>The  predict tool can predict the incidence of the breast cancer at early stage by analyzing smallest set of attributes
+                that has been obtained from the clinical test.It will help  to diagnose patients and predict the likelihood of a breast cancer.The features  computed from a digitized image of a fine needle aspirate (FNA) of a breast mass are used for this prediction. They describe characteristics of the cell nuclei.</p>
+            <p>Fine needle aspiration (FNAA) has become popular as a valuable tool in preoperative assessment of breast masses, and it shows high accuracy, sensitivity, and specificity. It has gained popularity due to its fast and easy approach, being inexpensive, and can be performed with little complications. To differentiate benign from malignant lesions is one of the major goals of FNA.
+                With the hepl of machine learning we are here able to predict the condition of the cell using the features calculated from the FNA test. </p>
+        </div> 
+    </div>  
+    <!-- /Aside -->   
+</body>
+</html>

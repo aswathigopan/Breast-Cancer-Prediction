@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Breast Cancer Prediction</title>
+    <link rel="stylesheet" href="/static/css/predictstyle.css">
+</head>
+<body background="/static/images/b3.jpg" id="back">
+    <header>
+        <div class="container">
+            <img src="/static/images/breast-cancer.jpg" alt="symbol" height="80" width="80">
+             <div class="headtag">
+                 <a href="{{url_for('home')}}">Home</a>
+                 <a href="{{url_for('predict')}}">Predict Tool</a>
+                 <a href="{{url_for('about')}}">About Us</a>
+            </div>
+        </div>
+    </header>
+    <div>
+        <h3 style="color: black;font-style: oblique;">Please provide the values of the below features obtained from FNA test and click the submit button to check the condition of the cell.</h3>
+        <br>
+    </div>
+    <form action="{{url_for('result')}}"method="post" class="form">
+        <div class="mean">
+            <h2>Mean Features</h2>
+            <label>Radius_mean</label>
+            <br>
+            <input type="text" placeholder="Radius_mean" name="Radius_mean">
+            <br>
+            <label>Texture_mean</label>
+            <br>
+            <input type="text" placeholder="Texture_mean" name="Texture_mean">
+            <br>
+            <label>Smoothness_mean</label>
+            <br>
+            <input type="text" placeholder="Smoothness_mean" name="Smoothness_mean">
+            <br>
+            <label>Compactness_mean</label>
+            <br>
+            <input type="text" placeholder="Compactness_mean" name="Compactness_mean">
+            <br>
+            <label>Symmetry_mean</label>
+            <br>
+            <input type="text" placeholder="Symmetry_mean" name="Symmetry_mean">
+            <br>
+            <label>Fractal_Dimension_mean</label>
+            <br>
+            <input type="text" placeholder="Fractal_Dimension_mean" name="Fractal_Dimension_mean">
+            <br>    
+        </div>
+        <div class="worst">
+            <h2>Worst Features</h2>
+            <label>Radius_worst</label>
+            <br>
+            <input type="text" placeholder="Radius_worst" name="Radius_worst">
+            <br>
+            <label>Texture_worst</label>
+            <br>
+            <input type="text" placeholder="Texture_worst" name="Texture_worst">
+            <br>
+            <label>Smoothness_worst</label>
+            <br>
+            <input type="text" placeholder="Smoothness_worst" name="Smoothness_worst">
+            <br>
+            <label>Compactness_worst</label>
+            <br>
+            <input type="text" placeholder="Compactness_worst" name="Compactness_worst">
+            <br>
+            <label>Symmetry_worst</label>
+            <br>
+            <input type="text" placeholder="Symmetry_worst" name="Symmetry_worst">
+            <br>
+            <label>Fractal_Dimension_worst</label>
+            <br>
+            <input type="text" placeholder="Fractal_Dimension_worst" name="Fractal_Dimension_worst">
+            <br>  
+        </div>
+        <div class="se">
+            <h2>Standard Error Features</h2>
+            <label>Radius_se</label>
+            <br>
+            <input type="text" placeholder="Radius_se" name="Radius_se">
+            <br>
+            <label>Smoothness_se</label>
+            <br>
+            <input type="text" placeholder="Smoothness_se" name="Smoothness_se">
+            <br>
+            <label>Compactness_se</label>
+            <br>
+            <input type="text" placeholder="Compactness_se" name="Compactness_se">
+            <br>
+            <label>Fractal_Dimension_se</label>
+            <br>
+            <input type="text" placeholder="Fractal_Dimension_se" name="Fractal_Dimension_se">
+            <br>           
+        </div>      
+        <button type="submit" id="submit">Submit</button>              
+    </form>
+    <div class="output">
+        <h2 style="color: darkgreen;font-style: oblique;">{{prediction_text1}}</h1>
+        <h3 style="color: darkviolet;font-style: oblique;">{{prediction_text2}}</h2>
+    </div>
+            
+      
+ </body>
+</html>

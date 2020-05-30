@@ -1,0 +1,60 @@
+#back{
+    height: 100%;
+}
+header{
+    background-color:blueviolet;
+    height: 5em;
+}
+.headtag{
+    float: right;
+    margin-top: 30px;
+    margin-right:45px ;
+}
+.headtag a{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: white;
+    border: 1px solid deeppink;
+    padding:8px;
+    margin-right: 8px;
+}
+.headtag a:hover{
+    background-color:hotpink; 
+    color:black ;
+    transition: .5s ease-in-out;
+    border: 1px solid white;
+}
+.cancer{
+    font-family: 'Times New Roman', Times, serif;
+    color:black;
+    padding:60px;
+    margin-left:20px;
+    font-style: oblique;
+    line-height:1.5em;
+    font-size: large;
+    margin-right: 35%;
+    text-align: justify;
+}
+
+.worst{
+    border: 2px solid blue;
+    background-color: blueviolet;
+    height: 22.5em;
+    margin-top:-20%;
+    margin-right:32%;
+    padding: 30px;
+    line-height: 1.5em;
+    color:white;
+    margin-left: 53%;
+}
+.se{
+    border: 2px solid blue;
+    background-color: blueviolet;
+    height: 18em;
+    margin-left: 25%;
+    margin-right:60%;
+    padding: 30px;
+    line-height: 1.5em;
+    color:white;
+   margin-top:-28%;
+}

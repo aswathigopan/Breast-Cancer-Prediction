@@ -1,0 +1,81 @@
+#back{
+    height: 100%;
+}
+header{
+    background-color:blueviolet;
+    height: 5em;
+}
+.headtag{
+    float: right;
+    margin-top: 30px;
+    margin-right:35px ;
+    
+}
+.headtag a{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: white;
+    border: 1px solid deeppink;
+    padding:8px;
+    margin-right: 8px;
+}
+.headtag a:hover{
+    background-color: hotpink; 
+    color:black ;
+    transition: .5s ease-in-out;
+    border: 1px solid white;
+}
+
+#submit{
+    border-radius: 8px;
+    background-color:seagreen;
+    color:white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-style: oblique;
+    margin-left: 28%;
+    margin-right:70%;
+    margin-top: -3%;
+}
+#submit:hover{
+    background-color: darkgreen; 
+    color:black ;
+    transition: .5s ease-in-out;
+    border: 1px solid white;
+}
+.output{
+    margin-top: 3%;
+    margin-left: 10%;
+}
+.se{
+    float: right;
+    border: 2px solid blue;
+    background-color: blueviolet;
+    color: white;
+    height: 15em;
+    margin-top:-28%;
+    margin-right:60%;
+    margin-left: 40%;
+    padding: 30px;
+}
+.mean{
+    border: 2px solid blue;
+    background-color: blueviolet;
+    color: white;
+    height: 22em;
+    margin-right:83%;
+    margin-left:0.5%;
+    padding: 30px;
+}
+.worst{
+    float: right;
+    margin-right: 35%;
+    margin-top: -27%;
+    border: 2px solid blue;
+    background-color: blueviolet;
+    color: white;
+    height: 22em;
+    padding: 30px;
+}
